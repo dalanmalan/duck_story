@@ -5,74 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Duck Story Tattoo - Профессиональная тату-студия">
     <title>Duck Story Tattoo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-overlay"></div>
+        <div class="hero-bg"></div>
         <div class="hero-content">
-            <h1 class="hero-title">Duck Story</h1>
-            <p class="hero-subtitle">Tattoo Studio</p>
+            <div class="logo-container">
+                <h1 class="hero-title">
+                    <span class="title-line">Duck</span>
+                    <span class="title-line">Story</span>
+                </h1>
+                <div class="subtitle-wrapper">
+                    <p class="hero-subtitle">Tattoo Studio</p>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
-        <h2 class="section-title">Привет друг!</h2>
-        <p class="about-text">Тут создается красота для твоего тела</p>
+    <!-- Intro Section -->
+    <section class="intro">
+        <div class="intro-content">
+            <h2 class="intro-title">Привет друг!</h2>
+            <p class="intro-text">Тут создается красота для твоего тела</p>
+        </div>
     </section>
 
     <!-- Gallery Section -->
     <section class="gallery">
         <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="images/tattoo1.jpg" alt="Tattoo Work 1" loading="lazy">
+            <div class="gallery-item" data-index="1">
+                <div class="gallery-image-wrapper">
+                    <img src="images/tattoo1.jpg" alt="Tattoo Work 1" loading="lazy">
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="images/tattoo2.jpg" alt="Tattoo Work 2" loading="lazy">
+            <div class="gallery-item" data-index="2">
+                <div class="gallery-image-wrapper">
+                    <img src="images/tattoo2.jpg" alt="Tattoo Work 2" loading="lazy">
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="images/tattoo3.jpg" alt="Tattoo Work 3" loading="lazy">
+            <div class="gallery-item" data-index="3">
+                <div class="gallery-image-wrapper">
+                    <img src="images/tattoo3.jpg" alt="Tattoo Work 3" loading="lazy">
+                </div>
             </div>
-            <div class="gallery-item">
-                <img src="images/tattoo4.jpg" alt="Tattoo Work 4" loading="lazy">
+            <div class="gallery-item" data-index="4">
+                <div class="gallery-image-wrapper">
+                    <img src="images/tattoo4.jpg" alt="Tattoo Work 4" loading="lazy">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Features Section -->
     <section class="features">
-        <div class="feature-card">
-            <h3>Что тебя ждет:</h3>
-            <ul>
+        <div class="feature-card" data-feature="1">
+            <div class="feature-icon">✨</div>
+            <h3 class="feature-title">Что тебя ждет</h3>
+            <ul class="feature-list">
                 <li>Бесплатная консультация</li>
                 <li>Приятная атмосфера</li>
             </ul>
         </div>
-        <div class="feature-card">
-            <h3>Бесплатный эскиз</h3>
-            <p>при записи на сеанс</p>
+        <div class="feature-card" data-feature="2">
+            <div class="feature-icon">🎨</div>
+            <h3 class="feature-title">Бесплатный эскиз</h3>
+            <p class="feature-text">при записи на сеанс</p>
         </div>
-        <div class="feature-card">
-            <h3>Обеспечу весь процесс заживления</h3>
-            <p>дарю заживляющий набор в конце каждого сеанса</p>
+        <div class="feature-card" data-feature="3">
+            <div class="feature-icon">💫</div>
+            <h3 class="feature-title">Полное сопровождение</h3>
+            <p class="feature-text">Обеспечу весь процесс заживления — дарю заживляющий набор в конце каждого сеанса</p>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta">
-        <h2 class="cta-title">Ждем каждого!</h2>
-        <p class="cta-text">Для записи на сеанс тыкай на кнопку:</p>
-        <a href="https://vk.com/duck_story.tattoo" target="_blank" rel="noopener noreferrer" class="cta-button">
-            КНОПКА :)
-        </a>
+        <div class="cta-content">
+            <h2 class="cta-title">Ждем каждого!</h2>
+            <p class="cta-text">Для записи на сеанс</p>
+            <a href="https://vk.com/duck_story.tattoo" target="_blank" rel="noopener noreferrer" class="cta-button">
+                <span class="button-text">Записаться</span>
+                <span class="button-icon">→</span>
+            </a>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Duck Story Tattoo. Все права защищены.</p>
+        <p>&copy; 2025 Duck Story Tattoo</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
